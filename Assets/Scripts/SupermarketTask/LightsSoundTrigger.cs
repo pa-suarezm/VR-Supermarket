@@ -34,8 +34,11 @@ public class LightsSoundTrigger : MonoBehaviour
 			_lightSource.color = GetLightColorFromConfig();
 			_audioSource.clip = GetAudioFromConfig();
 
-			_audioSource.Play();
-			_lightSource.gameObject.SetActive(true);
+			if ( _audioSource.clip != null )
+				_audioSource.Play();
+
+			if (_lightSource.color != Color.black)
+				_lightSource.gameObject.SetActive(true);
 		}
 	}
 
@@ -52,6 +55,9 @@ public class LightsSoundTrigger : MonoBehaviour
 	{
 		switch (_lightType )
 		{
+			case LightType.NO_LIGHT:
+				return Color.black;
+
 			case LightType.LIGHT_COLOR_1:
 				return _lightColor1;
 
@@ -67,6 +73,9 @@ public class LightsSoundTrigger : MonoBehaviour
 	{
 		switch (_audioType)
 		{
+			case AudioType.NO_AUDIO:
+				return null;
+
 			case AudioType.AUDIO_CLIP_1:
 				return _audioClip1;
 
@@ -81,12 +90,14 @@ public class LightsSoundTrigger : MonoBehaviour
 
 public enum LightType
 {
+	NO_LIGHT,
 	LIGHT_COLOR_1,
 	LIGHT_COLOR_2
 }
 
 public enum AudioType
 {
+	NO_AUDIO,
 	AUDIO_CLIP_1,
 	AUDIO_CLIP_2
 }

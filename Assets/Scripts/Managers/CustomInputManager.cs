@@ -32,10 +32,10 @@ public class CustomInputManager : SingletonBehaviour<CustomInputManager>
       if (SupermarketTaskManager.Instance != null)
         SupermarketTaskManager.Instance.EndTask();
     }
-    /* // For debugging purposes
-    else
-		{
-			GameStateManager.Instance.GoToNextScene();
-		}*/
+	// For debugging purposes
+	else
+	{
+		GameStateManager.Instance.GoToNextScene();
+	}
   }
 }

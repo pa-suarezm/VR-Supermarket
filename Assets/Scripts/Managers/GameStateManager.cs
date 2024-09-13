@@ -46,4 +46,9 @@ public class Task
 	public static string TASK_04 = $"04{TASK_SUFFIX_SUPERMARKET}2";
 	public static string TASK_05 = $"05{TASK_SUFFIX_SUPERMARKET}3";
 	public static string TASK_06 = $"06{TASK_SUFFIX_SUPERMARKET}4";
+	public static string TASK_07 = $"07{TASK_SUFFIX_SUPERMARKET}5";
+	public static string TASK_08 = $"08{TASK_SUFFIX_SUPERMARKET}6";
+	public static string TASK_09 = $"09{TASK_SUFFIX_SUPERMARKET}7";
+	public static string TASK_10 = $"10{TASK_SUFFIX_SUPERMARKET}8";
+	public static string TASK_11 = $"11{TASK_SUFFIX_SUPERMARKET}9";
 }

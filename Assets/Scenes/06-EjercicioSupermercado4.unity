@@ -11922,8 +11922,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a4782bd5c889f44695b768da1b12776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _lightType: 0
-  _audioType: 1
+  _lightType: 1
+  _audioType: 2
   _audioSource: {fileID: 203172682}
   _lightSource: {fileID: 2072771469}
   _lightColor1: {r: 1, g: 1, b: 1, a: 0}
